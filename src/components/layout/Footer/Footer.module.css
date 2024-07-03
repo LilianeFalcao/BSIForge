@@ -1,0 +1,96 @@
+.footerB {
+    background-color: #2F4F4F;
+    color: white;
+    padding: 3em;
+    text-align: center;
+}
+
+.divPai {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.filho {
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+p {
+    padding: 10px;
+}
+
+p span {
+    font-weight: 800;
+}
+
+.formEmail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 15px;
+}
+
+label {
+    padding: 14px;
+}
+
+label input {
+    padding: 10px;
+    width: 30em;
+    background: transparent;
+    border: none;
+    color: white;
+    border-bottom: 2px solid black;
+}
+
+label ::placeholder {
+    font-size: 1.5em;
+    color: white;
+}
+
+.buttonForm {
+    background-color: #192c2c;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    width: 25em;
+    font-size: 16px;
+}
+
+.buttonForm:hover {
+    cursor: pointer;
+    background-color: #101d1d;
+}
+
+.contactInfoContainer {
+    margin-top: 20px;
+    border-top: 1px solid white;
+    padding-top: 20px;
+}
+
+.contactInfo {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 18px;
+}
+
+.contactInfo a {
+    color: white;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contactInfo a:hover {
+    color: #101d1d;
+}

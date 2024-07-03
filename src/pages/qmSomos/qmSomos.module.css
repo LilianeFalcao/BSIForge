@@ -1,0 +1,63 @@
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.link{
+    text-decoration: none;
+    color: white;
+}
+
+.linkButton {
+    background-color: #2F4F4F;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.linkButton:hover {
+    background-color: #101d1d;
+}
+.valores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+.valor2s{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    gap: 25px;
+}
+
+.images{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    gap: 20px;
+}
+.val{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
