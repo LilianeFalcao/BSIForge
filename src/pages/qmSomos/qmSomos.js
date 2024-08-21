@@ -66,8 +66,8 @@ const QmSomos = () => {
       <div className={styles.images}>
         <ImageFundadores src={Marido} alt="Giovanni de Souza Martins" />
         <ImageFundadores src={Linn} alt="Linn (Liliane) de Oliveira Falcão" />
-        <ImageFundadores src={Ladeira} alt="Ryan Ladeira" />
-        <ImageFundadores src={Cauan} alt="Cauan Tavares" />
+        <ImageFundadores src={Ladeira} alt="Ryan S. Ladeira" />
+        <ImageFundadores src={Cauan} alt="Cauan E. Tavares" />
       </div>
     </div>
   </div>

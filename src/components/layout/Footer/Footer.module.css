@@ -1,5 +1,5 @@
 .footerB {
-    background-color: #2F4F4F;
+    background-color: #26303d;
     color: white;
     padding: 3em;
     text-align: center;
@@ -57,7 +57,7 @@ label ::placeholder {
 }
 
 .buttonForm {
-    background-color: #192c2c;
+    background-color: #141a22;
     padding: 15px;
     border-radius: 10px;
     color: white;
@@ -68,7 +68,7 @@ label ::placeholder {
 
 .buttonForm:hover {
     cursor: pointer;
-    background-color: #101d1d;
+    background-color: #0d1116;
 }
 
 .contactInfoContainer {
