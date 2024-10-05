@@ -20,14 +20,14 @@
 .links {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 15px;
     transition: color 0.3s ease; /* Transição suave da cor ao passar o mouse */
 
     &:hover {
-        padding: 15px;
+        padding: 20px;
         color: #fff; /* Cor do texto ao passar o mouse */
         background-color: #101d1d; /* Cor de fundo ao passar o mouse */
-        border-radius: 5px; /* Borda arredondada ao passar o mouse */
+        border-radius: 20px; /* Borda arredondada ao passar o mouse */
     }
 }
 
@@ -72,50 +72,80 @@
     align-items: center;
     justify-content: center;
 }
+
+.contatoButton{
+    background-color: blueviolet;
+    padding: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #fff;
+    
+    &:hover {
+        padding: 20px;
+        color: #fff; /* Cor do texto ao passar o mouse */
+        background-color: rgb(102, 0, 197); /* Cor de fundo ao passar o mouse */
+        border-radius: 20px; /* Borda arredondada ao passar o mouse */
+    }
+}
+
+/* Responsividade para telas menores */
 @media (max-width: 768px) {
     .navB {
         flex-direction: column;
-        height: auto;
+        height: auto; /* Altura ajustada automaticamente */
+        padding: 15px;
     }
     
     .navList {
         flex-direction: column;
-        gap: 20px; /* Ajustar o espaçamento entre os links */
+        gap: 20px; /* Reduz o espaçamento entre os links em telas menores */
     }
 
     .logo {
         width: 40px;
-        height: 40px;
+        height: 40px; /* Reduz o tamanho da logo em telas menores */
     }
 
     .navItem span {
-        font-size: 1.2em;
+        font-size: 1.2em; /* Ajusta o tamanho da fonte dos itens do menu */
     }
 
     .subText {
-        font-size: 1em;
+        font-size: 1em; /* Diminui o tamanho da fonte do subtítulo */
+    }
+
+    .TitleBar {
+        font-size: 1.3em; /* Reduz um pouco o tamanho da fonte do título */
     }
 }
 
 @media (max-width: 480px) {
     .navB {
-        padding: 10px;
+        padding: 10px; /* Menos espaço ao redor da barra de navegação */
+    }
+
+    .navList {
+        gap: 15px; /* Ajusta ainda mais o espaçamento entre os links */
     }
 
     .logo {
         width: 30px;
-        height: 30px;
+        height: 30px; /* Diminui ainda mais o tamanho da logo */
     }
 
     .navItem span {
-        font-size: 1em;
+        font-size: 1em; /* Fonte menor para itens do menu */
     }
 
     .links {
-        font-size: 16px;
+        font-size: 16px; /* Reduz o tamanho da fonte dos links */
     }
 
     .subText {
-        font-size: 0.9em;
+        font-size: 0.9em; /* Fonte menor para o subtítulo */
+    }
+
+    .TitleBar {
+        font-size: 1.1em; /* Ajusta o tamanho da fonte do título */
     }
 }

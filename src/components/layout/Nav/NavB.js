@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Logo from "../../../assets/forgeLogo.png"
+///import Logo from "../../../assets/forgeLogo.png"
 import styles from "./NavB.module.css"
 
 const NavB = () => {
@@ -8,7 +8,7 @@ const NavB = () => {
     <nav className={styles.navB}>
         <div className={styles.logoS}>
             <div className={styles.logoImg}>
-                <img className={styles.logo} src={Logo} alt="logo"/>
+                {/*<img className={styles.logo} src={Logo} alt="logo"/>*/}
                 <p className={styles.subText} >BsiForge</p>
             </div>
             <p className={styles.subText}>Forjando Soluções Tecnológicas!</p>

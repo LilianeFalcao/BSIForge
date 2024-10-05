@@ -1,3 +1,4 @@
+/* Estilos gerais */
 .container {
     max-width: 800px;
     margin: auto;
@@ -15,7 +16,8 @@
     line-height: 1.6;
     margin-bottom: 20px;
 }
-.link{
+
+.link {
     text-decoration: none;
     color: white;
 }
@@ -34,21 +36,23 @@
 .linkButton:hover {
     background-color: #0d1116;
 }
-.valores{
+
+.valores {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 15px;
 }
-.valor2s{
+
+.valor2s {
     display: flex;
     flex-direction: row;
     padding: 10px;
     gap: 25px;
 }
 
-.images{
+.images {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -56,8 +60,101 @@
     padding: 15px;
     gap: 20px;
 }
-.val{
+
+.val {
     display: flex;
     gap: 15px;
     flex-direction: column;
+}
+
+/* Responsividade para tablets (telas entre 600px e 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    .description {
+        font-size: 17px;
+    }
+
+    .linkButton {
+        padding: 8px 18px;
+        font-size: 15px;
+    }
+
+    .valor2s {
+        gap: 20px;
+    }
+
+    .images {
+        gap: 15px;
+    }
+}
+
+/* Responsividade para smartphones (telas até 600px) */
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .linkButton {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .valor2s {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .images {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .valores {
+        padding: 10px;
+    }
+}
+
+/* Responsividade para telas muito pequenas (até 420px) */
+@media (max-width: 420px) {
+    .title {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .linkButton {
+        padding: 6px 14px;
+        font-size: 13px;
+    }
+
+    .valor2s {
+        gap: 10px;
+    }
+
+    .images {
+        gap: 8px;
+    }
+
+    .valores {
+        padding: 5px;
+    }
 }

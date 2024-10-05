@@ -42,7 +42,7 @@ label {
     padding: 14px;
 }
 
-label input {
+label input,textarea {
     padding: 10px;
     width: 30em;
     background: transparent;
@@ -52,7 +52,7 @@ label input {
 }
 
 label ::placeholder {
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: white;
 }
 
@@ -70,19 +70,24 @@ label ::placeholder {
     cursor: pointer;
     background-color: #0d1116;
 }
-
 .contactInfoContainer {
-    margin-top: 20px;
-    border-top: 1px solid white;
-    padding-top: 20px;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-around; /* Espaça os itens igualmente */
+    padding: 5px;
+    color: azure;
 }
 
 .contactInfo {
     display: flex;
-    justify-content: center;
-    gap: 15px;
-    font-size: 18px;
+    gap: 15px; /* Espaçamento entre os ícones */
 }
+
+p {
+    margin: 0;
+    padding: 10px 0;
+}
+
 
 .contactInfo a {
     color: white;
@@ -93,4 +98,63 @@ label ::placeholder {
 
 .contactInfo a:hover {
     color: #101d1d;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .divPai {
+        flex-direction: column;
+        gap: 20px; /* Reduz o espaçamento entre os elementos */
+    }
+
+    h2 {
+        font-size: 35px; /* Reduz o tamanho do título em telas menores */
+    }
+
+    label input {
+        width: 25em; /* Diminui a largura do input para telas menores */
+    }
+
+    .buttonForm {
+        width: 20em; /* Ajusta a largura do botão */
+        font-size: 14px; /* Diminui o tamanho da fonte no botão */
+    }
+
+    .contactInfo {
+        flex-direction: column; /* Empilha os links de contato em telas menores */
+        font-size: 16px; /* Ajusta o tamanho da fonte */
+    }
+}
+
+@media (max-width: 480px) {
+    .footerB {
+        padding: 2em; /* Reduz o padding geral do footer */
+    }
+
+    .divPai {
+        gap: 15px; /* Reduz ainda mais o espaçamento entre os elementos */
+    }
+
+    h2 {
+        font-size: 28px; /* Diminui ainda mais o tamanho do título */
+    }
+
+    p {
+        font-size: 14px; /* Ajusta o tamanho da fonte dos parágrafos */
+    }
+
+    label input {
+        width: 100%; /* O input agora ocupa toda a largura disponível */
+    }
+
+    .buttonForm {
+        width: 100%; /* O botão também ocupa toda a largura disponível */
+        font-size: 12px; /* Reduz o tamanho da fonte do botão */
+        padding: 10px; /* Reduz o padding do botão */
+    }
+
+    .contactInfo {
+        font-size: 14px; /* Diminui o tamanho da fonte */
+        gap: 10px; /* Menor espaçamento entre os links */
+    }
 }
