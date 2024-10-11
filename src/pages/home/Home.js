@@ -6,12 +6,15 @@ const Home = () => {
   return (
     <div className={styles.container}>
       <div className={styles.PolvoCoisasBonitas}>
-        alguma coisa bonita sobre a gente
-        uma linha do tempo até agr algo assim
+        <p>alguma coisa bonita sobre a gente
+        uma linha do tempo até agr algo assim</p>
         <img src={polvoImg} alt="" />
       </div>
       <div className={styles.Diferenciais}>
         Nossos Diferenciais
+        <div>
+          aaaaaaaaaaaaaaaaaaaaa
+        </div>
       </div>
       <div className={styles.Servicos}>
         Nossos Serviços
@@ -33,8 +36,9 @@ const Home = () => {
         </div>
 
         <div className={styles.ServicosButton}>
+          <Link className={styles.ServicosButton} to='/servicos'>Veja com mais detalhes nossos serviços</Link>
           <h3>Dê uma olhada em projetos realizados por nós</h3>
-          <Link to='/portifolio'>Vá para portifólio</Link>
+          <Link to='/portifolios'>Vá para portifólio</Link>
         </div>
       </div>
     </div>

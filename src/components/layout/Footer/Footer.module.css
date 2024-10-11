@@ -1,10 +1,23 @@
 .footerB {
-    background-color: #26303d;
+    background-color: #3f398c;
     color: white;
     padding: 3em;
     text-align: center;
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* Imagens */
+img {
+    width: 100%; /* Torna responsivo */
+    max-width: 200px; /* Limite de largura */
+    height: auto;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
 }
 
+/* Layout Flexbox */
 .divPai {
     display: flex;
     flex-direction: row;
@@ -13,12 +26,21 @@
     gap: 30px;
 }
 
+/* Estilo dos Filhos */
 .filho {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
 
 h2 {
     font-size: 45px;
+}
+
+h2 span{
+    color: rgb(224, 165, 2);
 }
 
 p {
@@ -42,7 +64,8 @@ label {
     padding: 14px;
 }
 
-label input,textarea {
+label input,
+textarea {
     padding: 10px;
     width: 30em;
     background: transparent;
@@ -70,91 +93,119 @@ label ::placeholder {
     cursor: pointer;
     background-color: #0d1116;
 }
+
 .contactInfoContainer {
-    display: flex;
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: space-around; /* Espaça os itens igualmente */
-    padding: 5px;
-    color: azure;
+    margin-top: 2rem;
 }
 
-.contactInfo {
+.icon {
     display: flex;
-    gap: 15px; /* Espaçamento entre os ícones */
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.icon a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: white;
+    color: #1c1c1c;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.instagram:hover  {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    color: white;
+}
+
+.whatsapp:hover {
+    background-color: #25d366;
+    color: white;
+}
+
+.linkedin:hover {
+    color: white;
+    background-color: #0077b5;
+}
+
+.gitHub:hover {
+    color: white;
+    background-color: #333;
 }
 
 p {
-    margin: 0;
-    padding: 10px 0;
+    margin-top: 1rem;
+    font-size: 0.9rem;
 }
 
 
+/*
 .contactInfo a {
     color: white;
     margin-top: 20px;
     text-decoration: none;
     transition: color 0.3s ease;
-}
+}*/
 
 .contactInfo a:hover {
-    color: #101d1d;
+    color: #24045f;
 }
 
-/* Responsividade para telas menores */
+/* Responsividade Footer */
 @media (max-width: 768px) {
     .divPai {
         flex-direction: column;
-        gap: 20px; /* Reduz o espaçamento entre os elementos */
+        gap: 20px;
     }
 
     h2 {
-        font-size: 35px; /* Reduz o tamanho do título em telas menores */
+        font-size: 35px;
     }
 
     label input {
-        width: 25em; /* Diminui a largura do input para telas menores */
+        width: 25em;
     }
 
     .buttonForm {
-        width: 20em; /* Ajusta a largura do botão */
-        font-size: 14px; /* Diminui o tamanho da fonte no botão */
+        width: 20em;
+        font-size: 14px;
     }
 
     .contactInfo {
-        flex-direction: column; /* Empilha os links de contato em telas menores */
-        font-size: 16px; /* Ajusta o tamanho da fonte */
+        flex-direction: row;
+        font-size: 16px;
     }
 }
 
 @media (max-width: 480px) {
     .footerB {
-        padding: 2em; /* Reduz o padding geral do footer */
+        padding: 2em;
     }
 
     .divPai {
-        gap: 15px; /* Reduz ainda mais o espaçamento entre os elementos */
+        gap: 15px;
     }
 
     h2 {
-        font-size: 28px; /* Diminui ainda mais o tamanho do título */
-    }
-
-    p {
-        font-size: 14px; /* Ajusta o tamanho da fonte dos parágrafos */
+        font-size: 28px;
     }
 
     label input {
-        width: 100%; /* O input agora ocupa toda a largura disponível */
+        width: 100%;
     }
 
     .buttonForm {
-        width: 100%; /* O botão também ocupa toda a largura disponível */
-        font-size: 12px; /* Reduz o tamanho da fonte do botão */
-        padding: 10px; /* Reduz o padding do botão */
+        width: 100%;
+        font-size: 12px;
+        padding: 10px;
     }
 
     .contactInfo {
-        font-size: 14px; /* Diminui o tamanho da fonte */
-        gap: 10px; /* Menor espaçamento entre os links */
+        font-size: 14px;
+        gap: 10px;
     }
 }

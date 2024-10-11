@@ -8,10 +8,10 @@ const NavB = () => {
     <nav className={styles.navB}>
         <div className={styles.logoS}>
             <div className={styles.logoImg}>
-                {/*<img className={styles.logo} src={Logo} alt="logo"/>*/}
-                <p className={styles.subText} >BsiForge</p>
+                {/*<img className={styles.logo} src={Logo} alt="logo"/>
+                <p className={styles.subText}>Forjando Soluções Tecnológicas!</p>*/}
+                <p className={styles.subText} >BSI Forge</p>
             </div>
-            <p className={styles.subText}>Forjando Soluções Tecnológicas!</p>
         </div>
         <ul className={styles.navList}>
             <li className={styles.navItem}>
@@ -21,7 +21,7 @@ const NavB = () => {
                 <Link className={styles.links} to="/servicos"> <span>Serviços</span> </Link>
             </li>
             <li className={styles.navItem}>
-                <Link className={styles.links} to="/portifolio"> <span>Portifólio</span> </Link>
+                <Link className={styles.links} to="/portifolios"> <span>Portifólio</span> </Link>
             </li>
             <li className={styles.navItem}>
                 <Link className={styles.links} to="/quemSomos"> <span>Quem Somos</span> </Link>

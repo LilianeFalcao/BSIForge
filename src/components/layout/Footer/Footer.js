@@ -1,9 +1,11 @@
 import React from 'react'
 import styles from "./Footer.module.css"
+//images
+//import ForgeSemPolvo from '../../../assets/forgeSemFundo.png'
 //hook para formulario
 import useForm from "../../../hooks/useForm"
 //contact icon
-import { IoLogoInstagram, IoLogoWhatsapp, IoLogoLinkedin} from "react-icons/io5";
+import { IoLogoInstagram, IoLogoWhatsapp, IoLogoLinkedin, IoLogoGithub} from "react-icons/io5";
 //envios do email
 import emailjs from '@emailjs/browser';
 import { serviceId, templateEmail, publicKey } from '../../../constants/variavel'
@@ -45,7 +47,7 @@ const Footer = () => {
     <footer className={styles.footerB}>
       <div className={styles.divPai}>
           <div className={styles.filho}>
-            <h2>BSI Forge</h2>
+            <h2><span>BSI</span> Forge</h2>
             <p>Empresa Júnior de Bacharelado em Sistemas de Informáção do CEFET-MG, campus Varginha.</p>
             <p><span>CNPJ:</span> n tem ainda</p>
             <p><span>Endereço:</span> Av. dos Imigrantes, 1000 - Jardim Panorama, Varginha - MG. CEP: 37022-560 </p>
@@ -87,10 +89,19 @@ const Footer = () => {
       </div>
       <div className={styles.contactInfoContainer}>
         <h3>Contatos: </h3>
-        <div className={styles.contactInfo}>
-          <a href="https://www.instagram.com/glacial_linn/" target="_blank" rel="noopener noreferrer"><IoLogoInstagram size={30}/></a> 
-          <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"><IoLogoWhatsapp size={30}/> </a>
-          <a href="https://www.linkedin.com/in/lilianefalcao" target="_blank" rel="noopener noreferrer"><IoLogoLinkedin size={30}/></a>
+        <div className={styles.icon}>
+          <a className={styles.instagram} href="https://www.instagram.com/glacial_linn/" target="_blank" rel="noopener noreferrer"> 
+            <IoLogoInstagram size={30}/> 
+          </a> 
+          <a className={styles.whatsapp} href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"> 
+            <IoLogoWhatsapp size={30}/>
+          </a>
+          <a className={styles.linkedin} href="https://www.linkedin.com/in/lilianefalcao" target="_blank" rel="noopener noreferrer"> 
+            <IoLogoLinkedin size={30}/>
+          </a>
+          <a className={styles.gitHub} href="https://github.com/LilianeFalcao" target="_blank" rel="noopener noreferrer"> 
+            <IoLogoGithub size={30}/>
+          </a>
         </div>
       </div>
       <p>© 2024 Todos os direitos reservados</p>
