@@ -1,35 +1,38 @@
 import React from 'react'
+import styles from './Servicos.module.css'
 
 const Servicos = () => {
   return (
-    <div>
-      <div>textp cout</div>
-      <div>
-          <div>
+    <div className={styles.containerGeral}>
+      <div className={styles.titulos}>
+          <h3>Detalhes dos nossos serviços</h3>
+      </div>
+      <div className={styles.CardsContainers}>
+          <div className={styles.CardSites}>
             <h3>Desenvolvimento de Sites</h3>
-            <div>
-            <p><span>Desenvolvimento de Sites Institucionais/Landing Pages</span></p>
-            <p>
-              aaaaaaaaaaaaaaaaaaaa
-            </p>
-            <p><span>Desenvolvimento de Sites E-commerce/Personalizados</span></p>
-            <p>
-              aaaaaaaaaaaaaaaaaaaa
-            </p>
+            <div className={styles.cardInfos}>
+              <p><span>Desenvolvimento de Sites Institucionais/Landing Pages</span></p>
+              <p>
+                Sites Institucionais são como outdoors, sites de página única, no intuito de passar informações sobre um produto e/ou serviço.
+              </p>
+              <p><span>Desenvolvimento de Sistemas E-commerce/Personalizados</span></p>
+              <p>
+                
+              </p>
             </div>
           </div>
 
-          <div >
+          <div className={styles.CardMidia} >
             <h3>Gerenciamento de Midias Sociais</h3>
             <p>
             Gerenciamento 
             </p>
           </div>
 
-          <div>
+          <div className={styles.CardMobile}>
             <h3>Desenvolvimento de Aplicações Mobile</h3>
             <p>
-              Desenvolvimento de sites e aplicações mobile de qualidade
+              Tem 
             </p>
           </div>
       </div>

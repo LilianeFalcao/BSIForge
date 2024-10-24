@@ -1,0 +1,78 @@
+.containerGeral {
+    display: flex;
+    flex-direction: column;
+    background-color: #2b2d42; /* Fundo escuro neutro */
+    padding: 20px;
+    gap: 20px; /* Espaçamento entre os elementos */
+}
+
+/* Títulos */
+.titulos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    border-radius: 8px;
+}
+
+.titulos h3 {
+    font-size: 2rem;
+    color: #edf2f4; /* Texto claro para contraste */
+    margin: 0;
+}
+
+/* Contêiner dos Cards */
+.CardsContainers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Estilização dos Cards */
+.CardSites, .CardMidia, .CardMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #3d405b; /* Cor neutra para todos os cards */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito suave no hover */
+}
+
+.CardSites:hover, .CardMidia:hover, .CardMobile:hover {
+    transform: translateY(-5px); /* Elevação ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada no hover */
+}
+
+.CardSites h3, .CardMidia h3, .CardMobile h3 {
+    font-size: 1.5rem;
+    color: #edf2f4; /* Texto claro */
+    margin-bottom: 10px;
+}
+
+.cardInfos {
+    background-color: #4e5d6c; /* Fundo mais discreto para informações adicionais */
+    padding: 10px;
+    border-radius: 8px;
+    color: #edf2f4; /* Texto claro */
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .CardsContainers {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+}

@@ -1,11 +1,26 @@
+@font-face {
+    font-family: 'Orbitron';
+    src: url('../../../fonts/Orbitron/orbitron-light.otf') format('woff2'),
+        url('../../../fonts/Orbitron/orbitron-medium.otf') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Orbitron';
+src: url('../../../fonts/Orbitron/orbitron-black.otf') format('woff2'),
+        url('../../../fonts/Orbitron/orbitron-bold.otf') format('woff');
+font-weight: bold;
+font-style: normal;
+}
+
+
 .footerB {
     background-color: #3f398c;
     color: white;
     padding: 3em;
     text-align: center;
-    font-family: "Protest Strike", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-weight: 400
 }
 /* Imagens */
 img {
@@ -36,11 +51,15 @@ img {
 
 
 h2 {
-    font-size: 45px;
+    font-size: 75px;
+    font-weight: 450;
+    font-family: 'Orbitron', sans-serif;
 }
 
-h2 span{
-    color: rgb(224, 165, 2);
+h2 span{ 
+    color: goldenrod;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 450;
 }
 
 p {
@@ -114,7 +133,7 @@ label ::placeholder {
     border-radius: 10px;
     background-color: white;
     color: #1c1c1c;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .instagram:hover  {

@@ -1,29 +1,70 @@
-body {
-    overflow-x: hidden; /* Impede o overflow horizontal */
-}
-.containerGeral {
-    box-sizing: border-box;
+.slide {
     display: flex;
-    justify-content: center; /* Centraliza o conteúdo */
-    align-items: center; /* Centraliza verticalmente */
-    flex-direction: column; /* Organiza em coluna */
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #2b2d42; /* Fundo mais escuro para um visual mais sério */
     width: 100%;
-    }
-    
-    h1 {
-        font-size: 2rem;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    
-    @media (max-width: 480px) {
-        h1 {
-        font-size: 1.5rem;
-        }
-    }
-    
-.a{
+    min-height: 100vh;
+    padding: 20px;
+    color: #edf2f4;
+}
+
+.ul {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que os cards se ajustem em diferentes telas */
+    justify-content: center;
+    gap: 30px; /* Espaçamento entre os cards */
+    padding: 0;
+    list-style: none;
+}
+
+.li {
+    background-color: #3d405b; /* Fundo neutro para os cards */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Leve sombra para profundidade */
+    max-width: 400px;
     width: 100%;
-    height: 480px;
-    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação para hover */
+}
+
+.li:hover {
+    transform: translateY(-10px); /* Efeito de elevação no hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais forte no hover */
+}
+
+.li h2, .li h3 {
+    margin: 15px 20px;
+    font-size: 1.5em;
+    color: #edf2f4;
+}
+
+.li img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0; /* Bordas arredondadas no topo */
+}
+
+.li p {
+    margin: 15px 20px;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #8d99ae;
+}
+
+.li p a {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #8d99ae;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease; /* Animação no hover */
+}
+
+.li p a:hover {
+    color: #ef233c; /* Cor de destaque no hover */
+    transform: scale(1.05); /* Leve aumento no hover */
 }

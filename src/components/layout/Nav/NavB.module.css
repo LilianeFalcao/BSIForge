@@ -1,15 +1,32 @@
+@font-face {
+    font-family: 'Orbitron';
+    src: url('../../../fonts/Orbitron/orbitron-light.otf') format('woff2'),
+        url('../../../fonts/Orbitron/orbitron-medium.otf') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Orbitron';
+src: url('../../../fonts/Orbitron/orbitron-black.otf') format('woff2'),
+        url('../../../fonts/Orbitron/orbitron-bold.otf') format('woff');
+font-weight: bold;
+font-style: normal;
+}
+
+
 .navB {
     display: flex;
     justify-content: center;
-    background-color: #26303d;
+    background-color: #3f398c;
     align-items: center;
-    padding: 20px;
-    height: 90px;
+    padding: 25px;
+    height: 85px;
 }
 
 .navList {
     display: flex;
-    gap: 35px; /* Espaçamento entre os links */
+    gap: 35px;
     list-style: none;
     align-items: center;
     padding: 0;
@@ -20,20 +37,26 @@
     color: white;
     text-decoration: none;
     font-size: 15px;
-    transition: color 0.3s ease; /* Transição suave da cor ao passar o mouse */
+    transition: color 0.3s ease;
 
     &:hover {
-        padding: 20px;
-        color: #fff; /* Cor do texto ao passar o mouse */
-        background-color: #101d1d; /* Cor de fundo ao passar o mouse */
-        border-radius: 20px; /* Borda arredondada ao passar o mouse */
+        padding: 15px;
+        color: #fff; 
+        background-color: #24045f; 
+        border-radius: 20px; 
     }
+}
+.navItem{
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
 }
 
 .navItem span{
-    font-size: 1.5em;
-    font-weight:700;
+    font-size: 2em;
+    font-weight:450;
     text-decoration: none;
+
 }
 .TitleBar{
     font-size: 1.5em;
@@ -45,31 +68,20 @@
     text-transform: uppercase;
     color: goldenrod;
 }
+
 .subText{
-    font-weight: 900;
-    font-size: 1.2em;
-    justify-content:center;
-    align-items: center;
     color: white;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 450;
+    font-family: 'Apparat', sans-serif;
+    height: 300px;
 }
-.logoS{
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    align-items: center;
-    justify-content: center;
-    margin: 14px;
-}
-.logo{  
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-}
-.logoImg{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+
+.subText span{
+    color: rgb(212, 175, 55);    
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 450;
 }
 
 .contatoButton{
@@ -87,6 +99,24 @@
     }
 }
 
+
+
+@media (max-width: 1001px ) {
+    .navList {
+        flex-direction: row;
+        font-size: 10px;
+        gap: 20px;
+    }
+}
+
+
+@media (max-width: 875px ) {
+    .navList {
+        flex-direction: row;
+        font-size: 10px;
+        gap: 20px;
+    }
+}
 @media (max-width: 768px) {
     .navB {
         flex-direction: column;

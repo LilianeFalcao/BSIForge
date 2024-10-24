@@ -61,7 +61,7 @@ const Footer = () => {
               <input 
                 type="text" 
                 name="from_name" 
-                placeholder='Ensira um name'
+                placeholder='Ensira um nome'
                 value={form.from_name}
                 onChange={onChangeInputs}
               />
@@ -90,7 +90,7 @@ const Footer = () => {
       <div className={styles.contactInfoContainer}>
         <h3>Contatos: </h3>
         <div className={styles.icon}>
-          <a className={styles.instagram} href="https://www.instagram.com/glacial_linn/" target="_blank" rel="noopener noreferrer"> 
+          <a className={styles.instagram} href="https://www.instagram.com/bsiforge/" target="_blank" rel="noopener noreferrer"> 
             <IoLogoInstagram size={30}/> 
           </a> 
           <a className={styles.whatsapp} href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"> 
