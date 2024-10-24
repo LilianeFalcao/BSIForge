@@ -17,7 +17,7 @@ const QmSomos = () => {
 
   return (
     <div className={styles.container}>
-    <div> 
+    <div className={styles.container2}> 
       <div className={styles.title}>
         Conheça um pouco sobre a <span>BSI Forge</span>
       </div>

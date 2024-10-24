@@ -9,11 +9,10 @@ font-style: normal;
 @font-face {
 font-family: 'Orbitron';
 src: url('../../../fonts/Orbitron/orbitron-black.otf') format('woff2'),
-        url('../../../fonts/Orbitron/orbitron-bold.otf') format('woff');
+    url('../../../fonts/Orbitron/orbitron-bold.otf') format('woff');
 font-weight: bold;
 font-style: normal;
 }
-
 
 .navB {
     display: flex;

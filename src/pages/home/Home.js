@@ -1,5 +1,5 @@
 import React from 'react'
-import polvoImg from '../../assets/finalmente2.png'
+import polvoImg from '../../assets/PolvoForgeSemFundo.png'
 import styles from './Home.module.css'
 import { Link } from 'react-router-dom'
 const Home = () => {
