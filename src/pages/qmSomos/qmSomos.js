@@ -1,17 +1,16 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import styles from './qmSomos.module.css'
 import styled from 'styled-components'
-import Linn  from "../../assets/linn.png"
-import Marido  from "../../assets/marido.png"
+import Linn  from "../../assets/Linn.jpg"
+import Marido  from "../../assets/Giovanni.jpeg"
 import Ladeira  from "../../assets/ladeira.png"
-import Cauan  from "../../assets/cauan.jpg"
+import Cauan  from "../../assets/Cauan.jpeg"
 
 const QmSomos = () => {
   const ImageFundadores = styled.img `
-    width: 250px; 
-    height: 250px; 
-    border-radius: 50%; 
+    width: 300px; 
+    height: 200px; 
+    border-radius: 100%; 
     object-fit: cover; 
   `
 
@@ -30,9 +29,6 @@ const QmSomos = () => {
         containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus 
         PageMaker including versions of Lorem Ipsum.
       </div>
-      <button className={styles.linkButton}>
-        <Link className={styles.link} to="/estrutura">Nossa Estrutura!</Link>
-      </button>
     </div>
     <div className={styles.valores}>
       <h2> sobre os valores</h2>
@@ -64,8 +60,8 @@ const QmSomos = () => {
     <div>
       <h2>nossos fundadores</h2>
       <div className={styles.images}>
-        <ImageFundadores src={Marido} alt="Giovanni de Souza Martins" />
         <ImageFundadores src={Linn} alt="Linn (Liliane) de Oliveira Falcão" />
+        <ImageFundadores src={Marido} alt="Giovanni de Souza Martins" />
         <ImageFundadores src={Ladeira} alt="Ryan S. Ladeira" />
         <ImageFundadores src={Cauan} alt="Cauan E. Tavares" />
       </div>

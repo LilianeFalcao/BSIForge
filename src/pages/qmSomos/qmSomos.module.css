@@ -87,7 +87,7 @@
 /* Responsividade para tablets (telas entre 600px e 1024px) */
 @media (max-width: 1024px) {
     .container {
-        max-width: 90%;
+        max-width: 100%;
         padding: 15px;
     }
 
@@ -109,7 +109,43 @@
     }
 
     .images {
+        width: 25px;
         gap: 15px;
+    }
+}
+@media (max-width: 650px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .linkButton {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .valor2s {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .images {
+        width: 50px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .valores {
+        padding: 10px;
     }
 }
 

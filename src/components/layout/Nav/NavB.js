@@ -22,6 +22,9 @@ const NavB = () => {
             <li className={styles.navItem}>
                 <Link className={styles.links} to="/quemSomos"> <span>Quem Somos</span> </Link>
             </li>
+            <li className={styles.navItem}>
+                <Link className={styles.links} to="/ps"> <span>Processo Seletivo</span> </Link>
+            </li>
         </ul>
     </nav>
     )
