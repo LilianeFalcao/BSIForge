@@ -24,6 +24,7 @@
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
+
 }
 
 .link {
@@ -59,12 +60,24 @@
 
 .valores h1, h2{
     color: #e0e0e0;
+    margin-bottom: 5px;
+}
+
+.valoress{
+    display: flex;
+    flex-direction: row;
+}
+
+.valoress p{
+    max-width: 750px;
+    color: #e0e0e0;
 }
 
 .valor2s {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 10px;
+    color: #e0e0e0;
     gap: 25px;
 }
 
@@ -78,10 +91,19 @@
     margin: auto;
 }
 
+.valoresPartido{
+    display: flex;
+    flex-direction: column;
+}
 .val {
     display: flex;
-    gap: 15px;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 15px; 
+}
+
+.val p {
+    font-size: 1.2em;
+    margin-right: 15px; 
 }
 
 /* Responsividade para tablets (telas entre 600px e 1024px) */

@@ -3,7 +3,7 @@ import styles from './qmSomos.module.css'
 import styled from 'styled-components'
 import Linn  from "../../assets/Linn.jpg"
 import Marido  from "../../assets/Giovanni.jpeg"
-import Ladeira  from "../../assets/ladeira.png"
+import Ladeira  from "../../assets/Ladeira.jpeg"
 import Cauan  from "../../assets/Cauan.jpeg"
 
 const QmSomos = () => {
@@ -33,26 +33,28 @@ const QmSomos = () => {
     <div className={styles.valores}>
       <h2> sobre os valores</h2>
       <div className={styles.valor2s}>
-        <div>
-          <h1>Missão: </h1>
-          <p>
-            Desenvolver conhecimentos adquiridos dentro do curso e um ambiente de trabalho para que os alunos se empenhem em seguir com suas carreiras.
-          </p>
+        <div className={styles.valoress}>
+          <div>
+            <h1>Missão: </h1>
+            <p>
+              Desenvolver conhecimentos adquiridos dentro do curso e um ambiente de trabalho para que os alunos se empenhem em seguir com suas carreiras.
+            </p>
+          </div>
+          <div>
+            <h1>Visão:</h1>
+            <p>
+              Inserir jovens no mercado de trabalho através de um ambiente que desenvolva sua criatividade.
+            </p>
+          </div>
         </div>
-        <div>
-          <h1>Visão:</h1>
-          <p>
-            Inserir jovens no mercado de trabalho através de um ambiente que desenvolva sua criatividade.
-          </p>
-        </div>
-        <div>
-          <h1>Valores:</h1>
+        <div className={styles.valoresPartido} >
+          <h1>Valores: I.E.C.C.I</h1>
           <p className={styles.val}> 
-            <span>Inovação</span>
-            <span>Ética</span>
-            <span>Comprometimento</span>
-            <span>Cliente em primeiro lugar</span>
-            <span>Incentivo à formação profissional</span>
+            <h3>Inovação</h3>
+            <h3>Ética</h3>
+            <h3>Comprometimento</h3>
+            <h3>Clientes em primeiro lugar</h3>
+            <h3>Incentivo à formação profissional</h3>
           </p>
         </div>
       </div>
@@ -60,8 +62,8 @@ const QmSomos = () => {
     <div>
       <h2>nossos fundadores</h2>
       <div className={styles.images}>
-        <ImageFundadores src={Linn} alt="Linn (Liliane) de Oliveira Falcão" />
-        <ImageFundadores src={Marido} alt="Giovanni de Souza Martins" />
+        <ImageFundadores src={Linn} alt="Linn (Liliane) O. Falcão" />
+        <ImageFundadores src={Marido} alt="Giovanni S. Martins" />
         <ImageFundadores src={Ladeira} alt="Ryan S. Ladeira" />
         <ImageFundadores src={Cauan} alt="Cauan E. Tavares" />
       </div>

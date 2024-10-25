@@ -65,6 +65,6 @@
 }
 
 .li p a:hover {
-    color: #ef233c; /* Cor de destaque no hover */
+    color: #d2b8fd; /* Cor de destaque no hover */
     transform: scale(1.05); /* Leve aumento no hover */
 }
