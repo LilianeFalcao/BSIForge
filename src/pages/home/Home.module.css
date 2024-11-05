@@ -126,4 +126,31 @@
     .Card {
         grid-template-columns: 1fr;
     }
+
+    .TextoPagInicial{
+        font-size: 15px;
+        margin: 15px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .PolvoCoisasBonitas, .Servicos {
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+
+    .PolvoCoisasBonitas img{
+        height: 450px;
+        width: 450px;
+    }
+
+    .Card {
+        grid-template-columns: 1fr;
+    }
+
+    .TextoPagInicial{
+        font-size: 15px;
+        margin: 15px;
+    }
 }
