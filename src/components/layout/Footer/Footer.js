@@ -1,7 +1,5 @@
 import React from 'react'
 import styles from "./Footer.module.css"
-//images
-//import ForgeSemPolvo from '../../../assets/forgeSemFundo.png'
 //hook para formulario
 import useForm from "../../../hooks/useForm"
 //contact icon
@@ -9,7 +7,8 @@ import { IoLogoInstagram, IoLogoWhatsapp, IoLogoLinkedin, IoLogoGithub} from "re
 //envios do email
 import emailjs from '@emailjs/browser';
 import { serviceId, templateEmail, publicKey } from '../../../constants/variavel'
-
+//toast
+import toast from 'react-hot-toast';
 
 const Footer = () => {
 
@@ -23,7 +22,7 @@ const Footer = () => {
     e.preventDefault();
 
     if (!form.from_name || !form.email || !form.message) {
-      alert("Por favor, preencha todos os campos.");
+      toast.error("Por favor, preencha todos os campos.");
       return;
     }
 
@@ -35,11 +34,12 @@ const Footer = () => {
 
     emailjs.send(serviceId, templateEmail, templateParams, publicKey)
     .then((response) => {
-      console.log('foi email porra ', response.status, response.text)
+      toast.success('E-mail enviado com sucesso!', response)
     })
     .catch( (err) => {
-      console.log( 'se fudeu ', err)
+      toast.error("Ops, algo deu errado!", err)
     });
+
 
     clearInputs();
   }

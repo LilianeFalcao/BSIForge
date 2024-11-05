@@ -10,6 +10,7 @@ import Footer from './components/layout/Footer/Footer';
 import Container from './components/layout/Container';
 import { Portifolio } from './pages/portifolio/Portifolio';
 import { PS } from './pages/processoSeletivo/PS';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
@@ -26,6 +27,10 @@ function App() {
         </Routes>
         </Container>
         <Footer />
+        <Toaster  
+          position='bottom-right'
+          reverseOrder={false}
+          />
         </BrowserRouter>
     </div>
   );
